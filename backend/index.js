@@ -6,7 +6,7 @@ import cors from "cors";
 import authRoutes from "./routes/authRoute.js";
 import CategoryRouter from "./routes/category/CategoryRoutes.js";
 
-const app = express();
+export const app = express();
 
 app.use(cors());
 app.use(express.json());
@@ -23,8 +23,8 @@ const connect = async () => {
     console.log("unable to connect");
   }
 };
-connect();
 
-app.listen(8000, () => console.log("Server running on port 8000"));
-
-export default app;
+if (process.env.NODE_ENV !== "test") {
+  connect();
+  app.listen(8000, () => console.log("Server running on port 8000"));
+}
