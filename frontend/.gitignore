@@ -10,7 +10,7 @@ backend/.DS_Store
 
 # React (Frontend - client)
 node_modules/
-client/.env
+.env
 client/.vscode/
 client/.idea/
 client/.DS_Store
