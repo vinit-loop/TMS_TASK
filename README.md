@@ -37,3 +37,8 @@ Changes to a child category do not affect the parent category.
 
 Admins can manage all category operations.
 Normal Users can only view categories without modification rights.
+
+
+for start the project 
+
+do npm i at frontend and backend both side and then start command is npm start at both side.
