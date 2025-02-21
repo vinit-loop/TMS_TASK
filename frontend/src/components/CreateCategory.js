@@ -56,12 +56,13 @@ const CreateCategory = ({ categories, loadCategories }) => {
     ...transformCategoriesToCascader(categories),
   ];
 
-  // Handle cascader change
   const handleCascaderChange = (value, selectedOptions) => {
     setParent(value ? value[value.length - 1] : null);
-    setSelectedPath(selectedOptions?.map((option) => option.label));
-  };
 
+    setSelectedPath(
+      selectedOptions ? selectedOptions.map((option) => option.label) : []
+    );
+  };
   return (
     <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
       <div className="flex items-center space-x-2 mb-6">

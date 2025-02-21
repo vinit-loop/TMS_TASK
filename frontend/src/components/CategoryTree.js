@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { Tree, Button, Modal, Input, Empty, Select, Tabs, message } from "antd";
 import {
-  EditOutlined,
   DeleteOutlined,
+  EditOutlined,
   FolderOutlined,
-  UnorderedListOutlined,
-  MoreOutlined,
+  UnorderedListOutlined
 } from "@ant-design/icons";
+import { Button, Empty, Input, Modal, Select, Tabs, Tree, message } from "antd";
+import React, { useState } from "react";
 import { deleteCategory, updateCategory } from "../services/apiService";
 
 const { TabPane } = Tabs;

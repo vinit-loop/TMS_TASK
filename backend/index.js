@@ -12,7 +12,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/", userRouter);
-
 app.use("/api/category", CategoryRouter);
 
 const connect = async () => {
